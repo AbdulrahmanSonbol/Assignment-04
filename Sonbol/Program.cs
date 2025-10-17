@@ -117,73 +117,50 @@
         //        else if (arr[i] > max)  max = arr[i];
         //    }
 
-            
+
         //}
 
         #endregion
 
+        #region Q7
+
+        //public static int FactorialOfTheNumber (ref int number)
+        //{
+
+        //    int Count = 1;
+
+        //    for (int i = 1; i <= number; i++)
+        //    {
+        //        Count *= i;
+        //    }
+
+        //    return Count;
+
+        //}   
+
+
+        #endregion
+
+        #region Q8
+
+        //public static void ChangeChar (ref char[] arr, int size, int position, char letter)
+        //{
+
+        //    arr[position] = letter ;
+
+        //    for (int i = 0; i < size; i++) {
+            
+        //       Console.Write (arr[i] + " ");
+            
+        //    }
+
+        //}
+
+        #endregion
+
+
         static void Main(string[] args)
         {
-            #region Array
-
-            //int[,] marks = new int[2, 5];
-
-            //for (int i= 0; i < marks.GetLength(0); i++)
-            //{
-            //    Console.WriteLine($"Grade of student number {i+1}");
-
-            //    for (int j= 0; j < marks.GetLength(1); )
-            //    {
-
-            //       Console.WriteLine($"Subject number {j+1}");
-
-            //        bool isparsed = int.TryParse(Console.ReadLine(), out marks[i,j]);
-
-            //        if (isparsed) j++;
-            //    }
-            //}
-
-            //Console.Clear();
-
-            //for (int i = 0; i < marks.GetLength(0); i++)
-            //{
-            //    Console.WriteLine($"Grade of student number {i + 1}");
-
-            //    for (int j = 0; j < marks.GetLength(1); j++)
-            //    {
-
-            //        Console.WriteLine($"Subject number {j + 1} = {marks[i,j]}");
-
-            //    }
-            //}
-
-
-
-            //int[,] marks = new int [2, 3];
-
-            //for (int i = 0; i < marks.Length; i++ ) { 
-
-            //     int.TryParse(Console.ReadLine(), out int mark);
-
-            //    //if (isoarsed) i++;
-
-            //    marks [i / marks.GetLength(1), i % marks.GetLength(1) ] = mark;
-
-
-            //}
-
-            //Console.WriteLine("--------------------");
-
-            //for (int i = 0; i < marks.Length; i++)
-            //{
-
-            //    Console.WriteLine(marks[i / marks.GetLength(1), i % marks.GetLength(1)]);
-
-            //}
-
-
-            #endregion
-
             #region Q1
 
             //Value type -->
@@ -302,6 +279,333 @@
             //Console.WriteLine($"Minimum value in array: {min}");
 
             #endregion
+
+            #region Q7
+
+            //int x = 5;
+
+            //Console.WriteLine(FactorialOfTheNumber(ref x));
+
+            #endregion
+
+            #region Q8
+
+            //char[] arr = { 'B', 'B', 'D', 'O' };
+            //int size = arr.Length;
+
+            //ChangeChar(ref arr, size, 0, 'A');
+
+            #endregion
+
+            #region Q9
+
+            //int[] arr = { -1, 2, 3, 4, 5, -6, 7, 8, 9, -10 };
+
+            //int count = 0;
+
+            //for (int i = 0; i < arr.Length; i++) {
+
+            //    count += arr[i];
+            //}
+
+            //Console.WriteLine(count);
+
+            #endregion
+
+            #region Q10
+
+            //int[] arr1 = { 1, 2, 3, 4, 5 };
+            //int[] arr2 = { 6, 7, 8, 9, 10 };
+
+            //int size = arr1.Length + arr2.Length;
+
+            //int[] merged = new int[size];
+
+
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    merged[i] = arr1[i];
+            //}
+
+
+            //for (int i = 0; i < arr2.Length; i++)
+            //{
+            //    merged[arr1.Length + i] = arr2[i];
+            //}
+
+            //Array.Sort(merged);
+
+
+            //Console.Write("Merged array in ascending order: ");
+
+            //foreach (int num in merged)
+            //{
+            //    Console.Write(num + " ");
+            //}
+
+
+
+            #endregion
+
+            #region Q11
+
+            //int[] arr = { 7, 1, 2, 21, 3, 8, 3, 4, 5, 6, 7, 7, 8, 8, 9, 10, 21, 21, };
+
+            //int size = arr.Length;
+
+
+
+            //int[] arrFreq = new int[size];
+
+            //Console.Write("Array elements:");
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write(arr[i] + " ");
+            //}
+
+            //Console.WriteLine("\n");
+
+
+            //bool[] visited = new bool[size];
+
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Array.Sort(arr);
+
+            //    if (visited[i]) continue;
+
+            //    int count = 0;
+
+
+            //    for (int j = 0; j < size; j++)
+            //    {
+
+            //        if (arr[i] == arr[j]) { 
+
+            //            count++;
+
+            //            visited[j] = true;
+            //        }
+
+
+            //    }
+
+            //    arrFreq[i] = count;
+
+            //    Console.WriteLine($"Element {arr[i]}  \t{arrFreq[i]} \ttimes");
+
+
+            //}
+
+            #endregion
+
+            #region Q12
+
+
+            //int[] arr = { 1, 2, 3, 4, 5, 6, -7, 21 };
+
+            //int size = arr.Length,
+            //    min = arr[0],
+            //    max = arr[1];
+
+            //for (int i = 0; i < size; i++)
+            //{
+
+            //    if (arr[i] < min) min = arr[i];
+            //    if (arr[i] > max) max = arr[i];
+
+            //}
+
+
+            //Console.Write("Array elements: ");
+
+            //foreach (int num in arr) Console.Write(num + " ");
+
+            //Console.WriteLine("\n");
+
+            //Console.WriteLine($"Maximum element is: {max} \nMaximum element is: {min}" );
+
+
+            #endregion
+
+            #region Q13
+
+
+            //int[] arr = { 1, 2, 3, 4, 5, 6, 7, 21 };
+
+            //int size = arr.Length,
+            //    max = arr[0],
+            //    SecondLargestElement = arr[1];
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    SecondLargestElement = max;
+
+            //    if (arr[i] > max) max = arr[i];
+
+
+            //}
+
+
+            //Console.Write("Array elements: ");
+
+            //foreach (int num in arr) Console.Write(num + " ");
+
+            //Console.WriteLine("\n");
+
+            //Console.WriteLine($"Second largest element is: {SecondLargestElement} ");
+
+
+            #endregion
+
+            #region Q14
+
+
+            //Console.Write("Enter size of array: ");
+            //int size = int.Parse(Console.ReadLine());
+
+            //int[] arr = new int[size];
+
+            //Console.WriteLine("Enter array elements:");
+
+            //for (int i = 0; i < size;)
+            //{
+            //    bool isparsed = int.TryParse(Console.ReadLine(), out arr[i]);
+
+            //    if (isparsed) i++;
+            //}
+
+            //int maxDistance = 0;
+
+           
+            //for (int i = 0; i < size; i++)
+            //{
+            //    for (int j = i + 1; j < size; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+            //        {
+            //            int distance = j - i - 1; 
+
+            //            if (distance > maxDistance)
+            //            {
+            //                maxDistance = distance;
+            //            }
+            //        }
+            //    }
+            //}
+
+            //Console.WriteLine($"\nThe longest distance between two equal elements is: {maxDistance}");
+
+
+            #endregion
+
+            #region Q15
+
+
+            //Console.Write("Enter a sentence: ");
+            //string input = Console.ReadLine();
+
+
+            //string[] words = input.Split(' ');
+
+            //Array.Reverse(words);
+
+
+            //Console.Write("Reversed: ");
+
+            //for (int i = 0; i < words.Length; i++)
+            //{
+            //    Console.Write(words[i]);
+
+            //    if (i < words.Length - 1)
+            //        Console.Write(" ");
+            //}
+
+
+            #endregion
+
+            #region Q16
+
+            //int rows, cols;
+
+            //Console.Write("Enter number of rows: ");
+            //rows = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter number of columns: ");
+            //cols = int.Parse(Console.ReadLine());
+
+            //int[,] arr1 = new int[rows, cols];
+            //int[,] arr2 = new int[rows, cols];
+
+            //Console.WriteLine("\nEnter elements of the first array: ");
+
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < cols;)
+            //    {
+            //        Console.Write($"Element [{i},{j}]: ");
+            //        bool isParsed = int.TryParse(Console.ReadLine(), out arr1[i, j]);
+
+            //        if (isParsed)
+            //            j++;
+            //        else
+            //            Console.WriteLine("Invalid input Please enter a valid number.");
+            //    }
+            //}
+
+            //Console.Clear();
+
+            //Console.WriteLine("Elements of the 'first' array:\n");
+
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < cols; j++)
+            //    {
+            //        Console.Write(arr1[i, j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            //Array.Copy(arr1, arr2, arr1.Length);
+
+
+            //Console.WriteLine("\nElements of the 'second' array 'after copy': \n");
+
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < cols; j++)
+            //    {
+            //        Console.Write(arr2[i, j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Q17
+
+            //int[] arr = { 1, -2, 0, 3, -4, -5, 6, -7, 21 };
+
+            //int size = arr.Length;
+            //Array.Sort(arr);
+            //Array.Reverse(arr);
+            //for (int i = 0; i < size; i++)
+            //{
+
+            //    Console.WriteLine($"\t{arr[i]}");
+
+            //}
+
+
+
+            #endregion
+
+
+
+
+
         }
     }
 }
